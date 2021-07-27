@@ -1,0 +1,64 @@
+# dd-
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="post.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <title>DD</title>
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li><a href="home.html" style="text-decoration:none;"><input type ="button" value="HOME"></input></a></li>
+            <li><a href="chat.html" style="text-decoration:none;"><input type ="button" value="CHAT ROOM"></input></a></li>
+            <li><a href="member.html" style="text-decoration:none;"><input type ="button" value="MEMBER"></input></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="b">
+        <div class="post">
+            <h1 class="name">demi</h1>
+            <div class="c">
+                <textarea class="text" rows="5" placeholder="what do you want to ask?"></textarea>
+                <div class="button"><input type="button" value="POST"></div>
+            </div>
+        </div>
+        <div class="posted" style="border-color:#F0C865;border-style:solid;border-width:5px;">
+            <div class="out">
+                <h1 class="namep">Jay</h1>
+                <h1 class="gar"><i class="far fa-share-square"></i></h1>
+            </div>
+            <section class="input">
+                I'm a naughty boy.
+            </section>
+            <div class="e">
+                <div class="botbut">
+                    <input type="button" value="LIKE">
+                    <input type="button" value="COMMENT">
+                    <input id="div" type="button" value="SAVE">
+                </div>
+            </div>
+        </div>
+        <div class="mypost" style="border-color:#F0C865;border-style:solid;border-width:5px;">
+            <div class="out">
+                <h1 class="namep">demi</h1>
+                <h1 class="gar"><i class="fas fa-trash-alt"></i></h1>
+            </div>
+            <section class="input">
+                What a wonderful day!
+            </section>
+            <div class="e">
+                <div class="botbut">
+                    <input type="button" value="LIKE">
+                    <input type="button" value="COMMENT">
+                    <input type="button" value="SAVE">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="post.js"></script>
+</body>
+</html>
