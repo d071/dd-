@@ -1,0 +1,290 @@
+*{
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*table*/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #F0C865;
+    border-bottom: rgb(250,210,110);
+    box-shadow: 0px 10px 15px #00000010;
+    position: sticky;
+}
+/*the buttons*/
+.links{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.links li{
+    list-style: none;
+}
+.links a{
+    color: #FFF9F2;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.links input{
+    background: #F0C865;
+    padding: 10px;
+    color: #FFF9F2;
+    border-radius: 3px;
+    outline: none;
+    margin: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 30vw;
+}
+.links input[type="button"]:hover{
+    background-color:rgb(230,190,90);
+}
+.links input[type="button"]:active {
+    background-color: rgb(230,190,90);
+    transform: translateY(2px);
+}
+/*burger menu*/
+.burger div{
+    background-color: #FFF9F2;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+@media screen and(max-width:1024px){
+    .links{
+        width: 60%;
+
+    }
+
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .links{
+        position: absolute;
+        right:0;
+        height: 92vh;
+        background-color: #F0C865;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    fram{
+        opacity: 1;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+.b{
+    background-color: #FFF9F2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*post*/
+.post{
+    max-width: 600px;
+    min-width: 460px;
+    width: 85%;
+    min-height: 200px auto;
+    background-color: rgb(20, 130, 133,0.85);
+    margin-top: 40px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -10px 10px 15px #00000060;
+
+}
+.name{
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 20px;
+    max-width: 600px;
+    min-width: 460px;
+    width: 100%;
+    color: #FFF9F2;
+    user-select: none;
+}
+
+.c{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    max-width: 600px;
+    min-width: 460px;
+    width: 100%;
+}
+.text {
+    background: rgb(20, 130, 133,0.85);
+    padding: 10px;
+    color: #FFF9F2;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    min-height: 40px;
+    max-width: 600px;
+    min-width: 340px;
+    width: 100%;
+    word-wrap:break-word;
+    word-break:normal;
+    margin-right: 10px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+.text::placeholder{
+    color: #FFF9F2;
+}
+.section{
+    word-wrap:break-word;
+    word-break:normal;
+}
+.button input{
+    background: rgb(20, 130, 133,0.85);
+    padding: 10px;
+    color: #FFF9F2;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 50px;
+    margin-right: 25px;
+}
+.button input[type="button"]:hover{
+    background-color: #D96C6C;
+}
+.button input[type="button"]:active {
+    background-color: #D96C6C;
+    transform: translateY(2px);
+}
+/*posted*/
+.posted{
+    max-width: 600px;
+    min-width: 460px;
+    width: 85%;
+    background-color: rgb(20, 130, 133,0.85);
+    margin-top: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -10px 10px 15px #00000060;
+}
+.namep{
+    font-size: 20px;
+    color: #FFF9F2;
+    user-select: none;
+    margin-left: 30px;
+}
+.input{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 35px;
+    color: #FFF9F2;
+    font-size: 18px;
+    max-width: 520px;
+    min-width: 380px;
+    width: 88%;
+
+}
+.e{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+.botbut{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.botbut input{
+    background: rgb(20, 130, 133);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFF9F2;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.botbut input[type="button"]:hover{
+    background-color: rgba(150,220,107,1);
+}
+/*my post*/
+.mypost{
+    max-width: 600px;
+    min-width: 460px;
+    width: 85%;
+    background-color: rgb(20, 130, 133,0.85);
+    margin-top: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -10px 10px 15px #00000060;
+}
+.out{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 20px;
+    max-width: 600px;
+    min-width: 460px;
+    width: 100%;
+}
+.gar{
+    font-size: 20px;
+    color: #FFF9F2;
+    margin-right: 25px;
+    margin-right: 35px;
+}
